@@ -5,48 +5,53 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  emoji: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Arquitectura Escalable',
+    emoji: '🏗️',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Diseño ecosistemas digitales complejos y robustos. 
+        Experiencia real orquestando múltiples subdominios y microservicios, 
+        como se ve en la infraestructura de <strong>DuodecimStudio</strong>.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Visión de Negocio',
+    emoji: '🚀',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        No solo escribo código; construyo soluciones que <strong>generan valor</strong>.
+        Entiendo la diferencia entre "código limpio" y "producto viable",
+        alineando la tecnología con los objetivos comerciales.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Liderazgo Técnico',
+    emoji: '🧠',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Capacidad para liderar equipos, definir stacks tecnológicos modernos
+        (Angular, React, Node.js, Cloud) y transformar requisitos abstractos en
+        hojas de ruta de ingeniería claras.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, emoji, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <span style={{fontSize: '5rem', lineHeight: '1.5'}} role="img" aria-label={title}>
+          {emoji}
+        </span>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

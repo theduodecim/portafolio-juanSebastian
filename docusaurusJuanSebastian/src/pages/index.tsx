@@ -18,10 +18,11 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
+          {/* AQUÍ ESTÁ EL CAMBIO CLAVE: Llevamos al usuario a tu CV/Trayectoria */}
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/trayectoria/resumen">
+            📄 Ver mi Trayectoria & Skills
           </Link>
         </div>
       </div>
@@ -33,8 +34,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Inicio" // Título más limpio para la pestaña del navegador
+      description="Juan Sebastián - Arquitecto de Soluciones Digitales y Founder de DuodecimStudio">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

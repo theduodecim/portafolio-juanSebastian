@@ -1,30 +1,122 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Custom Theme - Cyan Brillante Dark Mode
  */
 
-/* You can override the default Infima variables here. */
+/* Light Mode - Morado moderno */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #7430e6;
+  --ifm-color-primary-darkest: #6020c0;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #b49bfb;
+  --ifm-color-primary-lightest: #c4b5fd;
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Mode - Cyan brillante */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Colores primarios - Azul suave profesional */
+  --ifm-color-primary: #58a6ff;
+  --ifm-color-primary-dark: #4493e6;
+  --ifm-color-primary-darker: #3d8bd9;
+  --ifm-color-primary-darkest: #2d70b3;
+  --ifm-color-primary-light: #79b8ff;
+  --ifm-color-primary-lighter: #8cc5ff;
+  --ifm-color-primary-lightest: #b3d9ff;
+  
+  /* Backgrounds oscuros clásicos */
+  --ifm-background-color: #0d1117;
+  --ifm-background-surface-color: #161b22;
+  
+  /* Code highlight sutil */
+  --docusaurus-highlighted-code-line-bg: rgba(88, 166, 255, 0.1);
+  
+  /* Text colors mejorados */
+  --ifm-font-color-base: #c9d1d9;
+  --ifm-color-emphasis-600: #8b949e;
+  
+  /* Borders sutiles */
+  --ifm-color-emphasis-300: #30363d;
+.hero {
+  background: linear-gradient(135deg, #1a1f2e 0%, #0d1117 50%, #1a1f2e 100%);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+  .hero__title { color: #2d70b3!important; }
+ .hero__subtitle { color: #3d8bd9!important; }
+
+
+}
+
+/* ===================================
+   HERO / BANNER
+   =================================== */
+
+.hero {
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  padding: 5rem 0;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ===================================
+   CARDS
+   =================================== */
+
+.card:hover {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+  border-color: var(--ifm-color-primary);
+  transition: all 0.3s ease;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer__links {
+  justify-content: center;
+  gap: 25rem;
+}
+
+.footer__col {
+  flex: 0 0 auto;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.footer__title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer__item {
+  line-height: 2;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .footer__links {
+    justify-content: center;
+    gap: 5rem;
+  }
 }

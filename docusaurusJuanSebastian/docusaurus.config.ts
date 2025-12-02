@@ -2,31 +2,25 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// El nombre de tu archivo de configuración es .ts, así que mantenemos el tipado
-
 const config: Config = {
-  // --- INFORMACIÓN BASE: Marca Personal ---
-  title: 'Juan Sebastián', // [CAMBIO CLAVE 1] Nombre de la marca
-  tagline: 'Arquitecto de Soluciones Digitales & Founder @ DuodecimStudio', // [CAMBIO CLAVE 2] Tagline profesional
+  title: 'Juan Sebastián Portafolio',
+  tagline: 'Arquitecto de Soluciones Digitales & Creador de @DuodecimStudio',
   favicon: 'img/favicon.ico',
 
   future: {
     v4: true,
   },
 
-  // AJUSTA ESTOS DOMINIOS CUANDO DESPLIEGUES:
-  url: 'https://juansebastian.dev', // [AJUSTAR] Tu dominio personal (o GitHub Pages)
-  baseUrl: '/',
+  url: 'https://thedoodecim.github.io',
+  baseUrl: '/juan-sebastian-docs/',
 
-  // Configuración de despliegue (ajusta si usas GitHub/Vercel)
-  organizationName: 'tu-usuario-de-github', // [AJUSTAR] Tu usuario o la organización de Duodecim
-  projectName: 'juan-sebastian-docs', // [AJUSTAR] Nombre del repositorio
-
+  organizationName: 'TheDuodecim',
+  projectName: 'docusaurus-JuanSebastian',
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
 
-  // Configuración de Idioma
   i18n: {
-    defaultLocale: 'es', // [CAMBIO CLAVE 3] Lo ponemos en español
+    defaultLocale: 'es',
     locales: ['es'],
   },
 
@@ -35,11 +29,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          // El sidebarPath ya estaba bien:
-          sidebarPath: './sidebars.ts', 
-          // Ajusta el link de edición (si lo usas) a tu propio repo
-          editUrl: 
-            'https://github.com/tu-usuario-de-github/juan-sebastian-docs/tree/main/',
+          sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/TheDuodecim/juan-sebastian-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -47,10 +38,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Ajusta el link de edición (si lo usas) a tu propio repo
-          editUrl:
-            'https://github.com/tu-usuario-de-github/juan-sebastian-docs/tree/main/',
-          // Mantenemos las buenas prácticas
+          editUrl: 'https://github.com/TheDuodecim/juan-sebastian-docs/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -63,30 +51,25 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // --- TEMAS Y NAVBAR ---
-    image: 'img/juan-social-card.jpg', // [AJUSTAR] Imagen de previsualización para LinkedIn
+    image: 'img/juan-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true, // Respeta el modo oscuro/claro del sistema
-      defaultMode: 'dark', // Sugiero 'dark' para un perfil tech senior
+      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
     },
     
     navbar: {
-      title: 'JS.', // Nombre corto y limpio
+      title: 'Juan Sebastian CV',
       logo: {
         alt: 'Juan Sebastian Logo',
-        src: 'img/logo-personal.svg', // [AJUSTAR] Logo personal
+        src: 'img/logo_personal.png',
       },
       items: [
-        // ESTO CORRIGE EL ERROR ANTERIOR: USAMOS 'techSidebar'
         {
           type: 'docSidebar',
-          sidebarId: 'techSidebar', // [CORRECCIÓN CLAVE 4] Cambiado de 'tutorialSidebar' a 'techSidebar'
+          sidebarId: 'techSidebar',
           position: 'left',
-          label: 'Tech Stack & Wiki', // [CAMBIO CLAVE 5] Nuevo label profesional
+          label: 'Tech Stack & Wiki',
         },
-        {to: '/blog', label: 'Bitácora', position: 'left'}, // Blog de opinión/experiencia
-        
-        // El link CLAVE a tu empresa (sin mezclar contenido)
         {
           href: 'https://www.linkedin.com/in/juan-sebastian-42ab7aa5/',
           label: 'LinkedIn',
@@ -94,13 +77,13 @@ const config: Config = {
         },
         {
           href: 'https://duodecimstudio.com.ar',
-          label: 'DuodecimStudio ↗', // Indicamos que va a un sitio externo
+          label: 'DuodecimStudio ↗',
           position: 'right',
         },
       ],
     },
     
-    // --- FOOTER ---
+    // FOOTER ARREGLADO - Mejor distribución
     footer: {
       style: 'dark',
       links: [
@@ -108,12 +91,16 @@ const config: Config = {
           title: 'Conocimiento',
           items: [
             {
-              label: 'Mi CV (Trayectoria)',
+              label: 'Resumen de Trayectoria (CV)',
               to: '/docs/trayectoria/resumen',
             },
             {
+              label: 'Stack Core & Skills',
+              to: '/docs/trayectoria/stack-core',
+            },
+            {
               label: 'Arquitectura de Sistemas',
-              to: '/docs/arquitectura/ecosistema-duodecim',
+              to: '/docs/arquitectura/ecosistema-duodecimstudio',
             },
           ],
         },
@@ -121,17 +108,21 @@ const config: Config = {
           title: 'Ecosistema',
           items: [
             {
-              label: 'DuodecimStudio (Servicios)',
+              label: 'DuodecimStudio',
               href: 'https://duodecimstudio.com.ar',
             },
             {
               label: 'GitHub',
-              href: `https://github.com/tu-usuario-de-github/juan-sebastian-docs`,
+              href: 'https://github.com/TheDuodecim',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/juan-sebastian-42ab7aa5/',
             },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Juan Sebastián. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Juan Sebastián Portafolio · Creador de @DuodecimStudio · Built with Docusaurus`,
     },
     
     prism: {

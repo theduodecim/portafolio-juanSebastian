@@ -14,7 +14,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'trayectoria/resumen',      // Tu CV en formato Markdown
         'trayectoria/stack-core',   // Tu lista de tecnologías fuertes (React, Node, etc.)
-        'trayectoria/filosofia',    // Cómo lideras equipos, cómo gestionas código
+        'trayectoria/Filosofia',    // Cómo lideras equipos, cómo gestionas código
       ],
     },
     {
@@ -26,23 +26,24 @@ const sidebars: SidebarsConfig = {
         description: 'Documentación sobre las decisiones de diseño y escalabilidad de proyectos complejos.',
       },
       items: [
-        'arquitectura/ecosistema-duodecim', // *Cómo* manejaste la bocha de subdominios
-        'arquitectura/estrategia-cloud',   // AWS/GCP/Azure que usas
-        'arquitectura/gestion-ci-cd',      // Tu proceso de despliegue
+        'arquitectura/infraestructura-servidores',   // AWS/GCP/Azure que usas
+        'arquitectura/automatizacion-devops',      // Tu proceso de despliegue
+        'arquitectura/ecosistema-duodecimstudio' // *Cómo* manejaste la bocha de subdominios
       ],
     },
     {
       type: 'category',
-      label: '🧠 Digital Garden & Snippets',
+      label: '🧠 Snippets & Patrones Reutilizables',
       link: {
         type: 'generated-index',
         title: 'Notas y Aprendizaje Continuo',
         description: 'Mi base de conocimiento personal y soluciones reutilizables.',
       },
       items: [
-        'snippets/react-hooks-avanzados',
-        'snippets/graphql-rest',
-        'snippets/troubleshooting-serverless',
+        'snippets/angular-20-snippets',
+        'snippets/react-19-snippets',
+         'snippets/backend-snippets',
+          'snippets/docker-devops-snippets'
       ],
     },
   ],

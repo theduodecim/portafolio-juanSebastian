@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-arquitectura/ecosistema-duodecimstudio" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Estrategia de Microservicios | Juan Sebastián Portafolio</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="keywords" content="portafolio, arquitectura, software, cloud, liderazgo técnico"><meta data-rh="true" property="og:image" content="img/logo_personal_cube.png"><meta data-rh="true" property="og:type" content="website"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="twitter:title" content="Juan Sebastián – Portafolio"><meta data-rh="true" name="twitter:image" content="img/logo_personal_cube.png"><meta data-rh="true" property="og:image" content="img/preview.png"><meta data-rh="true" property="og:type" content="website"><meta data-rh="true" property="og:url" content="https://portafolio-juanSebastian.duodecimstudio.com.ar"><meta data-rh="true" property="og:site_name" content="Portafolio de Juan Sebastián"><meta data-rh="true" property="og:locale" content="es_AR"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Estrategia de Microservicios | Juan Sebastián Portafolio"><meta data-rh="true" name="description" content="El ecosistema DuodecimStudio utiliza una arquitectura modular basada en microservicios distribuidos en subdominios funcionales."><meta data-rh="true" property="og:description" content="El ecosistema DuodecimStudio utiliza una arquitectura modular basada en microservicios distribuidos en subdominios funcionales."><link data-rh="true" rel="icon" href="/portafolio-juanSebastian/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://thedoodecim.github.io/portafolio-juanSebastian/docs/arquitectura/ecosistema-duodecimstudio"><link data-rh="true" rel="alternate" href="https://thedoodecim.github.io/portafolio-juanSebastian/docs/arquitectura/ecosistema-duodecimstudio" hreflang="es"><link data-rh="true" rel="alternate" href="https://thedoodecim.github.io/portafolio-juanSebastian/docs/arquitectura/ecosistema-duodecimstudio" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"🏗️ Arquitectura de Sistemas","item":"https://thedoodecim.github.io/portafolio-juanSebastian/docs/category/️-arquitectura-de-sistemas"},{"@type":"ListItem","position":2,"name":"Estrategia de Microservicios","item":"https://thedoodecim.github.io/portafolio-juanSebastian/docs/arquitectura/ecosistema-duodecimstudio"}]}</script><link rel="alternate" type="application/rss+xml" href="/portafolio-juanSebastian/blog/rss.xml" title="Juan Sebastián Portafolio RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/portafolio-juanSebastian/blog/atom.xml" title="Juan Sebastián Portafolio Atom Feed">
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z68R4TTDY3"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-Z68R4TTDY3",{anonymize_ip:!0})</script>
+
+
+
+<script src="/js/schema-person.js"></script><link rel="stylesheet" href="/portafolio-juanSebastian/assets/css/styles.a603a207.css">
+<script src="/portafolio-juanSebastian/assets/js/runtime~main.3145f737.js" defer="defer"></script>
+<script src="/portafolio-juanSebastian/assets/js/main.0a71d017.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/portafolio-juanSebastian/img/logo_personal.png"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/portafolio-juanSebastian/"><div class="navbar__logo"><img src="/portafolio-juanSebastian/img/logo_personal.png" alt="Juan Sebastian Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/portafolio-juanSebastian/img/logo_personal.png" alt="Juan Sebastian Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Juan Sebastian CV</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/portafolio-juanSebastian/docs/category/-trayectoria--skills">Tech Stack &amp; Wiki</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://www.linkedin.com/in/juan-sebastian-42ab7aa5/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://duodecimstudio.com.ar" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">DuodecimStudio ↗<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portafolio-juanSebastian/docs/category/-trayectoria--skills"><span title="🚀 Trayectoria &amp; Skills" class="categoryLinkLabel_W154">🚀 Trayectoria &amp; Skills</span></a><button aria-label="Ampliar la categoría &#x27;🚀 Trayectoria &amp; Skills&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/portafolio-juanSebastian/docs/category/️-arquitectura-de-sistemas"><span title="🏗️ Arquitectura de Sistemas" class="categoryLinkLabel_W154">🏗️ Arquitectura de Sistemas</span></a><button aria-label="Colapsar categoría &#x27;🏗️ Arquitectura de Sistemas&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/portafolio-juanSebastian/docs/arquitectura/infraestructura-servidores"><span title="Infraestructura &amp; Servidores" class="linkLabel_WmDU">Infraestructura &amp; Servidores</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/portafolio-juanSebastian/docs/arquitectura/automatizacion-devops"><span title="Automatización &amp; DevOps" class="linkLabel_WmDU">Automatización &amp; DevOps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/portafolio-juanSebastian/docs/arquitectura/ecosistema-duodecimstudio"><span title="Estrategia de Microservicios" class="linkLabel_WmDU">Estrategia de Microservicios</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portafolio-juanSebastian/docs/category/-snippets--patrones-reutilizables"><span title="🧠 Snippets &amp; Patrones Reutilizables" class="categoryLinkLabel_W154">🧠 Snippets &amp; Patrones Reutilizables</span></a><button aria-label="Ampliar la categoría &#x27;🧠 Snippets &amp; Patrones Reutilizables&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/portafolio-juanSebastian/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/portafolio-juanSebastian/docs/category/️-arquitectura-de-sistemas"><span>🏗️ Arquitectura de Sistemas</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Estrategia de Microservicios</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>El Ecosistema DuodecimStudio</h1></header>
+<p>El ecosistema <strong>DuodecimStudio</strong> utiliza una arquitectura modular basada en microservicios distribuidos en <strong>subdominios funcionales</strong>.<br>
+<!-- -->Cada subdominio representa un área, producto o servicio específico que puede crecer de forma independiente sin afectar al resto.</p>
+<p>Esta estrategia permite integrar proyectos diversos —web apps, arte IA, publicidad, herramientas internas, automatizaciones, soporte técnico y landing pages— dentro de una misma identidad tecnológica.</p>
+<hr>
+<h1>✨ Enfoque General</h1>
+<p>Mi filosofía es dividir los proyectos en <strong>dominios funcionales</strong>, donde cada servicio cumple un rol claro:</p>
+<ul>
+<li class=""><strong>Frontend Apps</strong> → Angular, Next.js, React</li>
+<li class=""><strong>Backend Services</strong> → Node.js, Firebase, PHP, Laravel</li>
+<li class=""><strong>Servicios Creativos</strong> → IA (ComfyUI), arte digital, multimedia</li>
+<li class=""><strong>Automatizaciones</strong> → N8N, scripts, tareas programadas</li>
+<li class=""><strong>Servicios Comerciales</strong> → sistemas de ventas, landing pages, funnels</li>
+<li class=""><strong>Infraestructura</strong> → Linux, Docker, Nginx, Proxmox, Cloud</li>
+</ul>
+<p>Cada pieza funciona como un microservicio, comunicándose mediante <strong>APIs REST</strong>, webhooks o integraciones N8N.</p>
+<hr>
+<h1>🗂️ Estructura Real por Subdominios</h1>
+<p>A continuación, la estructura real del ecosistema DuodecimStudio, con la función de cada subdominio:</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-sitio-principal">🌐 <strong>Sitio principal</strong><a href="#-sitio-principal" class="hash-link" aria-label="Enlace directo al -sitio-principal" title="Enlace directo al -sitio-principal" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="duodecimstudiocomar"><code>duodecimstudio.com.ar</code><a href="#duodecimstudiocomar" class="hash-link" aria-label="Enlace directo al duodecimstudiocomar" title="Enlace directo al duodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Portal central</li>
+<li class="">Presentación institucional</li>
+<li class="">Acceso a servicios, branding y redirecciones</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-marketing--publicidad">🎯 <strong>Marketing &amp; Publicidad</strong><a href="#-marketing--publicidad" class="hash-link" aria-label="Enlace directo al -marketing--publicidad" title="Enlace directo al -marketing--publicidad" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publicidadduodecimstudiocomar"><code>publicidad.duodecimstudio.com.ar</code><a href="#publicidadduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al publicidadduodecimstudiocomar" title="Enlace directo al publicidadduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Servicios de publicidad y promoción digital</li>
+<li class="">Funnels de venta</li>
+<li class="">Formularios de contacto + automatizaciones</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="landingduodecimstudiocomar"><code>landing.duodecimstudio.com.ar</code><a href="#landingduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al landingduodecimstudiocomar" title="Enlace directo al landingduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Landing pages para campañas específicas</li>
+<li class="">Tests A/B</li>
+<li class="">Integración con APIs y formularios automatizados</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-arte-ia--galería">🎨 <strong>Arte, IA &amp; Galería</strong><a href="#-arte-ia--galería" class="hash-link" aria-label="Enlace directo al -arte-ia--galería" title="Enlace directo al -arte-ia--galería" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="galleryduodecimstudiocomar"><code>gallery.duodecimstudio.com.ar</code><a href="#galleryduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al galleryduodecimstudiocomar" title="Enlace directo al galleryduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Exposición de arte digital / IA</li>
+<li class="">Portfolios visuales</li>
+<li class="">Catálogo de coleccionables o assets</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="creaciondigitalduodecimstudiocomar"><code>creaciondigital.duodecimstudio.com.ar</code><a href="#creaciondigitalduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al creaciondigitalduodecimstudiocomar" title="Enlace directo al creaciondigitalduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Servicios de diseño digital</li>
+<li class="">Arte AI (ComfyUI)</li>
+<li class="">Edición de imagen y contenido visual</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-automatizaciones-y-sistemas">🤖 <strong>Automatizaciones y Sistemas</strong><a href="#-automatizaciones-y-sistemas" class="hash-link" aria-label="Enlace directo al -automatizaciones-y-sistemas" title="Enlace directo al -automatizaciones-y-sistemas" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="automatizacion-sistemasduodecimstudiocomar"><code>automatizacion-sistemas.duodecimstudio.com.ar</code><a href="#automatizacion-sistemasduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al automatizacion-sistemasduodecimstudiocomar" title="Enlace directo al automatizacion-sistemasduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Flujos N8N</li>
+<li class="">Integraciones con redes sociales</li>
+<li class="">Sincronización de datos</li>
+<li class="">Automatizaciones comerciales y técnicas</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-servicios-técnicos--organización">🧩 <strong>Servicios Técnicos &amp; Organización</strong><a href="#-servicios-técnicos--organización" class="hash-link" aria-label="Enlace directo al -servicios-técnicos--organización" title="Enlace directo al -servicios-técnicos--organización" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="digitalizar-organizar-gestionarduodecimstudiocomar"><code>digitalizar-organizar-gestionar.duodecimstudio.com.ar</code><a href="#digitalizar-organizar-gestionarduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al digitalizar-organizar-gestionarduodecimstudiocomar" title="Enlace directo al digitalizar-organizar-gestionarduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Organización de procesos</li>
+<li class="">Digitalización, ERP, bases de datos</li>
+<li class="">Software para gestión empresarial</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="soporteduodecimstudiocomar"><code>soporte.duodecimstudio.com.ar</code><a href="#soporteduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al soporteduodecimstudiocomar" title="Enlace directo al soporteduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Helpdesk</li>
+<li class="">Tickets</li>
+<li class="">Asistencia remota</li>
+<li class="">SysAdmin y mantenimiento</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-sitios-y-desarrollo-web">🌍 <strong>Sitios y Desarrollo Web</strong><a href="#-sitios-y-desarrollo-web" class="hash-link" aria-label="Enlace directo al -sitios-y-desarrollo-web" title="Enlace directo al -sitios-y-desarrollo-web" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sitios-webduodecimstudiocomar"><code>sitios-web.duodecimstudio.com.ar</code><a href="#sitios-webduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al sitios-webduodecimstudiocomar" title="Enlace directo al sitios-webduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Servicios de creación de páginas web</li>
+<li class="">WordPress, WooCommerce</li>
+<li class="">Desarrollo a medida (Angular/React/Node)</li>
+<li class="">Hosting, SSL, dominios</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-formación--aprendizaje">🧪 <strong>Formación &amp; Aprendizaje</strong><a href="#-formación--aprendizaje" class="hash-link" aria-label="Enlace directo al -formación--aprendizaje" title="Enlace directo al -formación--aprendizaje" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="estudiando-programacionduodecimstudiocomar"><code>estudiando-programacion.duodecimstudio.com.ar</code><a href="#estudiando-programacionduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al estudiando-programacionduodecimstudiocomar" title="Enlace directo al estudiando-programacionduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Cursos</li>
+<li class="">Tutoriales</li>
+<li class="">Documentación</li>
+<li class="">Ejercicios</li>
+<li class="">Material educativo personal</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-infraestructura-de-correos">📧 <strong>Infraestructura de Correos</strong><a href="#-infraestructura-de-correos" class="hash-link" aria-label="Enlace directo al -infraestructura-de-correos" title="Enlace directo al -infraestructura-de-correos" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="correosduodecimstudiocomar"><code>correos.duodecimstudio.com.ar</code><a href="#correosduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al correosduodecimstudiocomar" title="Enlace directo al correosduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Gestión de emails</li>
+<li class="">Formularios conectados</li>
+<li class="">Integración con APIs de envío</li>
+<li class="">Automatización de notificaciones</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-hardware--pc-gaming">🖥️ <strong>Hardware / PC Gaming</strong><a href="#️-hardware--pc-gaming" class="hash-link" aria-label="Enlace directo al ️-hardware--pc-gaming" title="Enlace directo al ️-hardware--pc-gaming" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pc-gamer-hardwareduodecimstudiocomar"><code>pc-gamer-hardware.duodecimstudio.com.ar</code><a href="#pc-gamer-hardwareduodecimstudiocomar" class="hash-link" aria-label="Enlace directo al pc-gamer-hardwareduodecimstudiocomar" title="Enlace directo al pc-gamer-hardwareduodecimstudiocomar" translate="no">​</a></h3>
+<ul>
+<li class="">Servicios relacionados con hardware</li>
+<li class="">Asesoramiento</li>
+<li class="">Presupuestos de PCs</li>
+<li class="">Contenido sobre componentes</li>
+</ul>
+<hr>
+<h1>🧱 Cómo se conectan los subdominios</h1>
+<p>Todos los subdominios interactúan utilizando una capa técnica en común:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-apis-rest">✔ APIs REST<a href="#-apis-rest" class="hash-link" aria-label="Enlace directo al ✔ APIs REST" title="Enlace directo al ✔ APIs REST" translate="no">​</a></h3>
+<ul>
+<li class="">Productos</li>
+<li class="">Formularios</li>
+<li class="">Carritos</li>
+<li class="">Usuarios</li>
+<li class="">Emails</li>
+<li class="">Stocks</li>
+<li class="">Assets</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-n8n-como-orquestador">✔ N8N como orquestador<a href="#-n8n-como-orquestador" class="hash-link" aria-label="Enlace directo al ✔ N8N como orquestador" title="Enlace directo al ✔ N8N como orquestador" translate="no">​</a></h3>
+<ul>
+<li class="">Notificaciones</li>
+<li class="">Emails automáticos</li>
+<li class="">Integración con Google, LinkedIn, Meta, X</li>
+<li class="">Backups</li>
+<li class="">Workflows nocturnos</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-servidores-linux">✔ Servidores Linux<a href="#-servidores-linux" class="hash-link" aria-label="Enlace directo al ✔ Servidores Linux" title="Enlace directo al ✔ Servidores Linux" translate="no">​</a></h3>
+<ul>
+<li class="">Nginx reverse proxy</li>
+<li class="">Certificados SSL</li>
+<li class="">Docker (microservicios individualizados)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-base-de-datos">✔ Base de datos<a href="#-base-de-datos" class="hash-link" aria-label="Enlace directo al ✔ Base de datos" title="Enlace directo al ✔ Base de datos" translate="no">​</a></h3>
+<ul>
+<li class="">MySQL</li>
+<li class="">Firebase (auth + RTDB)</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/TheDuodecim/juan-sebastian-docs/tree/main/docs/arquitectura/ecosistema-duodecimstudio.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/portafolio-juanSebastian/docs/arquitectura/automatizacion-devops"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Automatización &amp; DevOps</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/portafolio-juanSebastian/docs/category/-snippets--patrones-reutilizables"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">🧠 Snippets &amp; Patrones Reutilizables</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-sitio-principal" class="table-of-contents__link toc-highlight">🌐 <strong>Sitio principal</strong></a><ul><li><a href="#duodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#-marketing--publicidad" class="table-of-contents__link toc-highlight">🎯 <strong>Marketing &amp; Publicidad</strong></a><ul><li><a href="#publicidadduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>publicidad.duodecimstudio.com.ar</code></a></li><li><a href="#landingduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>landing.duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#-arte-ia--galería" class="table-of-contents__link toc-highlight">🎨 <strong>Arte, IA &amp; Galería</strong></a><ul><li><a href="#galleryduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>gallery.duodecimstudio.com.ar</code></a></li><li><a href="#creaciondigitalduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>creaciondigital.duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#-automatizaciones-y-sistemas" class="table-of-contents__link toc-highlight">🤖 <strong>Automatizaciones y Sistemas</strong></a><ul><li><a href="#automatizacion-sistemasduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>automatizacion-sistemas.duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#-servicios-técnicos--organización" class="table-of-contents__link toc-highlight">🧩 <strong>Servicios Técnicos &amp; Organización</strong></a><ul><li><a href="#digitalizar-organizar-gestionarduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>digitalizar-organizar-gestionar.duodecimstudio.com.ar</code></a></li><li><a href="#soporteduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>soporte.duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#-sitios-y-desarrollo-web" class="table-of-contents__link toc-highlight">🌍 <strong>Sitios y Desarrollo Web</strong></a><ul><li><a href="#sitios-webduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>sitios-web.duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#-formación--aprendizaje" class="table-of-contents__link toc-highlight">🧪 <strong>Formación &amp; Aprendizaje</strong></a><ul><li><a href="#estudiando-programacionduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>estudiando-programacion.duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#-infraestructura-de-correos" class="table-of-contents__link toc-highlight">📧 <strong>Infraestructura de Correos</strong></a><ul><li><a href="#correosduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>correos.duodecimstudio.com.ar</code></a></li></ul></li><li><a href="#️-hardware--pc-gaming" class="table-of-contents__link toc-highlight">🖥️ <strong>Hardware / PC Gaming</strong></a><ul><li><a href="#pc-gamer-hardwareduodecimstudiocomar" class="table-of-contents__link toc-highlight"><code>pc-gamer-hardware.duodecimstudio.com.ar</code></a></li><li><a href="#-apis-rest" class="table-of-contents__link toc-highlight">✔ APIs REST</a></li><li><a href="#-n8n-como-orquestador" class="table-of-contents__link toc-highlight">✔ N8N como orquestador</a></li><li><a href="#-servidores-linux" class="table-of-contents__link toc-highlight">✔ Servidores Linux</a></li><li><a href="#-base-de-datos" class="table-of-contents__link toc-highlight">✔ Base de datos</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Conocimiento</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/portafolio-juanSebastian/docs/trayectoria/resumen">Resumen de Trayectoria (CV)</a></li><li class="footer__item"><a class="footer__link-item" href="/portafolio-juanSebastian/docs/trayectoria/stack-core">Stack Core &amp; Skills</a></li><li class="footer__item"><a class="footer__link-item" href="/portafolio-juanSebastian/docs/arquitectura/ecosistema-duodecimstudio">Arquitectura de Sistemas</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Ecosistema</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://duodecimstudio.com.ar" target="_blank" rel="noopener noreferrer" class="footer__link-item">DuodecimStudio<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/TheDuodecim" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/in/juan-sebastian-42ab7aa5/" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2025 Juan Sebastián Portafolio · Creador de @DuodecimStudio · Built with Docusaurus</div></div></div></footer></div>
+</body>
+</html>

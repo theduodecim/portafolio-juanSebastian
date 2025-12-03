@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus_juan_sebastian=globalThis.webpackChunkdocusaurus_juan_sebastian||[]).push([[2092],{664:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/portafolio-juanSebastian/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

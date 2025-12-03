@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus_juan_sebastian=globalThis.webpackChunkdocusaurus_juan_sebastian||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/portafolio-juanSebastian/blog","blogTitle":"Blog","authorsListPath":"/portafolio-juanSebastian/blog/authors"}')}}]);
